@@ -19,6 +19,7 @@ In order to execute this program you will need to install the following:
 * Gradle
 
 ##Postman Entries
+
 * Creating Authentication Token:
 http://localhost:8080/oauth/token
 Authentication- Basic Auth
