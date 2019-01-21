@@ -30,7 +30,7 @@ username admin
 password admin1234
 client_id spring-security-oauth2-read-write-client
 
-*Using Authentication Token for request to Resource Server:
+* Using Authentication Token for request to Resource Server:
 http://localhost:8080/secured/company
 Authentication- Bearer Token
 Token: [insert token]
