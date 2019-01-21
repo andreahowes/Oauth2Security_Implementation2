@@ -18,7 +18,7 @@ In order to execute this program you will need to install the following:
 * MySQL
 * Gradle
 
-##Postman Entries
+## Postman Entries
 
 * Creating Authentication Token:
 http://localhost:8080/oauth/token
