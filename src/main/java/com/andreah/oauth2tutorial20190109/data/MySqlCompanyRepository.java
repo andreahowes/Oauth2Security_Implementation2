@@ -27,3 +27,25 @@ public class MySqlCompanyRepository implements CompanyRepository{
         return allQuery.getResultList();
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -29,6 +29,7 @@ public class AuthServerConfig extends AuthorizationServerConfigurerAdapter {
     @Qualifier("dataSource")
     private DataSource dataSource;
 
+
     @Autowired
     private AuthenticationManager authenticationManager;
 
@@ -38,13 +39,13 @@ public class AuthServerConfig extends AuthorizationServerConfigurerAdapter {
     @Autowired
     private PasswordEncoder oauthClientEncoder;
 
-    //this is how Spring knows to use the database for token operations
+    //Spring knows to use the database for token operations from this bean
     @Bean
     public TokenStore tokenStore(){
         return new JdbcTokenStore(dataSource);
     }
 
-    //this is how authentication issues will be handled
+    //authentication issues will be handled here
     @Bean
     public OAuth2AccessDeniedHandler oAuth2AccessDeniedHandler(){
         return new OAuth2AccessDeniedHandler();
